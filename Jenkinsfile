@@ -5,27 +5,27 @@ import groovy.json.JsonSlurper
 //def fileProjectName = 'my-insecure-bank'
 def fileBranchName = 'main'
 // IO Environment
-def ioPOCId = 'Irfan-Test'
-def ioProjectName = 'Irfa-Test'
+def ioPOCId = 'io-sig-ats-irfa'
+def ioProjectName = 'sig-common-demo'
 def ioWorkflowEngineVersion = '2022.7.0'
-def ioServerURL = "https://io11.codedx.synopsys.com"
+def ioServerURL = "http://sig-ats-io-dx.centralus.cloudapp.azure.com"
 def ioRunAPI = "/api/ioiq/api/orchestration/runs/"
 
 // SCM - GitHub
-def gitHubPOCId = 'Github'
-def gitHubOwner = 'mohammedirfanma'
+def gitHubPOCId = 'Irfasnps-Github'
+def gitHubOwner = 'irfasnps'
 def scmBranch = fileBranchName
 def scmRepoName = 'insecure-bank'
 def scmRevisionDate = ''
 
 // AST - Polaris
-def polarisConfigName = 'polaris-sipse'
-def polarisProjectName = 'aws-insecure-bank'
+def polarisConfigName = 'common-demo-irfasnps-polaris'
+def polarisProjectName = 'IO-COMMON-DEMO-INSECURE-BANK'
 def polarisBranchName = fileBranchName
 
 // AST - Black Duck
-def blackDuckPOCId = 'Jenkins-BlackDuck-POC11'
-def blackDuckProjectName = 'my-insecure-bank'
+def blackDuckPOCId = 'common-demo-irfasnps'
+def blackDuckProjectName = 'common-demo-insecure-bank'
 def blackDuckProjectVersion = fileBranchName
 
 // BTS Configuration
@@ -36,9 +36,9 @@ def blackDuckProjectVersion = fileBranchName
 // def jiraProjectName = 'IRMOB'
 
 // Code Dx Configuration
-def codeDxConfigName = 'codedx-poc-11'
+def codeDxConfigName = 'codeDx-irfasnps-common-demo'
 def codeDxProjectId = '1'
-def codeDxInstnceURL = 'https://poc11.codedx.synopsys.com/codedx'
+def codeDxInstnceURL = 'http://sig-ats-io-dx.centralus.cloudapp.azure.com:8080/codedx'
 def codeDxProjectAPI = '/api/projects/'
 def codeDxAnalysisEndpoint = '/analysis'
 def codeDxProjectContext = codeDxProjectId + ';branch=' + fileBranchName
