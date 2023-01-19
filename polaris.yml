@@ -1,9 +1,9 @@
 version: "1"
 project:
-  name: ${scm.git.repo}
+  name: IO-COMMON-DEMO-INSECURE-BANK
   branch: main
   revision:
-    name: ${scm.git.commit}
+    name: IO-COMMON-DEMO-INSECURE-BANK
     date: ${scm.git.commit.date}
 capture:
   coverity:
