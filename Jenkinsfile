@@ -20,7 +20,7 @@ def scmRevisionDate = ''
 
 // AST - Polaris
 def polarisConfigName = 'common-demo-irfasnps-polaris'
-def polarisProjectName = 'IO-DEMO-insecure-bank'
+def polarisProjectName = 'IO-COMMON-DEMO-INSECURE-BANK'
 def polarisBranchName = fileBranchName
 
 // AST - Black Duck
