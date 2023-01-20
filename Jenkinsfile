@@ -7,7 +7,7 @@ def fileBranchName = 'main'
 // IO Environment
 def ioPOCId = 'io-sig-ats-irfa'
 def ioProjectName = 'sig-common-demo'
-def ioWorkflowEngineVersion = '2022.7.0'
+def ioWorkflowEngineVersion = '2022.12.0'
 def ioServerURL = "http://sig-ats-io-dx.centralus.cloudapp.azure.com"
 def ioRunAPI = "/api/ioiq/api/orchestration/runs/"
 
