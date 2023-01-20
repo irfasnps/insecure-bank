@@ -19,7 +19,7 @@ def scmRepoName = 'insecure-bank'
 def scmRevisionDate = ''
 
 // AST - Polaris
-def polarisConfigName = 'common-demo-irfasnps-polaris'
+def polarisConfigName = 'polaris-common-demo'
 def polarisProjectName = 'IO-COMMON-DEMO-INSECURE-BANK'
 def polarisBranchName = fileBranchName
 
