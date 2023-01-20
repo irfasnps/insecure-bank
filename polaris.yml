@@ -1,54 +1,24 @@
 version: "1"
+install:
+  coverity:
+    version: latest
 project:
-  name: IO-COMMON-DEMO-INSECURE-BANK
-  branch: main
+  name: "insecure-bank"
+  branch: "main"
   revision:
-    name: IO-COMMON-DEMO-INSECURE-BANK
-    date: ${scm.git.commit.date}
+    name: "insecure-bank"
+    date: "2020-10-01T14:25:30Z"
+  captureDir: .synopsys/polaris
 capture:
   coverity:
     buildless:
       project:
         languages:
           - "java"
-          - "javascript"
-        excludes:
-          - build.gradle
-  fileSystem:
-    ears:
-      extensions: [ear]
-      files:
-      - directory: ${project.projectDir}
-    wars:
-      extensions: [war]
-      files:
-      - directory: ${project.projectDir}
-  fileSystem:
-    ears:
-      extensions: [ear]
-      files:
-      - directory: ${project.projectDir}
-    java:
-      files:
-      - directory: ${project.projectDir}
-    javascript:
-      files:
-      - directory: ${project.projectDir}
-      - excludeRegex: node_modules|bower_components|vendor
-    php:
-      files:
-      - directory: ${project.projectDir}
-    python:
-      files:
-      - directory: ${project.projectDir}
-    ruby:
-      files:
-      - directory: ${project.projectDir}
-    wars:
-      extensions: [war]
-      files:
-      - directory: ${project.projectDir}
-install:
-  coverity:
-    version: latest
-serverUrl: https://sipse.polaris.synopsys.com
+
+
+
+
+
+
+
