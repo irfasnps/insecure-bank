@@ -119,6 +119,11 @@
 															<td>Verizon</td>
 															<td align="right">20.10 USD</td>		
 													</tr>
+													<tr>
+														<td>04-13-2019</td>
+														<td>${transferbean.description}</td>
+														<td align="right">20.10 USD</td>		
+													</tr>
 													</tbody>
 												</table>
 											</div>
