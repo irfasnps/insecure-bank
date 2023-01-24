@@ -2,7 +2,6 @@ package com.example.controllers;
 
 import java.security.Principal;
 import java.util.List;
-import java.tetetet;
 import javax.validation.Valid;
 
 import com.example.bean.Account;
@@ -43,6 +42,12 @@ public class ActivityController {
 	ActivityDao activityDao;
 
 	Logger logger = LoggerFactory.getLogger(ActivityController.class);
+	String userName = ctx.getAuthenticatedUserName();
+	String itemName = request.getParameter("itemName");
+	String query = "SELECT * FROM items WHERE owner = '"
+				+ userName + "' AND itemname = '"
+				+ itemName + "'";
+	ResultSet rs = stmt.execute(query);
 
 	@RequestMapping
 	public String activity(final Model model, final Principal principal) {
