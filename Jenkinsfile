@@ -29,7 +29,7 @@ def blackDuckProjectName = 'common-demo-insecure-bank'
 def blackDuckProjectVersion = fileBranchName
 
 // BTS Configuration
-def jiraAssignee = ''
+def jiraAssignee = 'siguser'
 def jiraConfigName = 'jira-irfa'
 def jiraIssueQuery = 'resolution=Unresolved'
 def jiraProjectKey = 'IODEMO'
