@@ -5,22 +5,22 @@ import groovy.json.JsonSlurper
 //def fileProjectName = 'my-insecure-bank'
 def fileBranchName = 'main'
 // IO Environment
-def ioPOCId = 'pwc_demo'
-def ioProjectName = 'PWC_INSECURE_BANK'
+def ioPOCId = 'io-sig-ats-irfa'
+def ioProjectName = 'sig-common-demo'
 def ioWorkflowEngineVersion = '2022.12.0'
-def ioServerURL = "https://io305.codedx.synopsys.com/"
+def ioServerURL = "http://sig-ats-io-dx.centralus.cloudapp.azure.com"
 def ioRunAPI = "/api/ioiq/api/orchestration/runs/"
 
 // SCM - GitHub
 def gitHubPOCId = 'Irfasnps-Github'
 def gitHubOwner = 'irfasnps'
 def scmBranch = fileBranchName
-def scmRepoName = 'insecure-bank-1'
+def scmRepoName = 'insecure-bank'
 def scmRevisionDate = ''
 
 // AST - Polaris
 def polarisConfigName = 'polaris-common-demo'
-def polarisProjectName = 'PWC_INSECURE_BANK'
+def polarisProjectName = 'IO-COMMON-DEMO-INSECURE-BANK'
 def polarisBranchName = fileBranchName
 
 // AST - Black Duck
